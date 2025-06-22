@@ -113,20 +113,6 @@ docker-compose -f windows10.yml up
 
 ---
 
-## 🌐 Cara Mengakses Windows
-
-### **Melalui Web Browser:**
-1. Buka browser
-2. Akses: `http://localhost:8006`
-3. Login dengan credentials yang sudah dibuat
-
-### **Melalui Remote Desktop:**
-1. Buka aplikasi Remote Desktop
-2. Connect ke: `localhost:3389`
-3. Login dengan credentials yang sudah dibuat
-
----
-
 ## ⚡ Tips dan Catatan
 
 - **Proses Download**: Pertama kali menjalankan akan download image Windows (~4-6GB)
