@@ -54,8 +54,8 @@ services:
     container_name: windows
     environment:
       VERSION: "10"  
-      USERNAME: ${WINDOWS_USERNAME:-admin}
-      PASSWORD: ${WINDOWS_PASSWORD:}
+      USERNAME: ${WINDOWS_USERNAME}
+      PASSWORD: ${WINDOWS_PASSWORD}
       RAM_SIZE: "12G"  
       CPU_CORES: "4"
       DISK_SIZE: "32G"
@@ -63,9 +63,9 @@ services:
     cap_add:
       - NET_ADMIN
     ports:
-      - "8006:8006"    # Web interface
-      - "3389:3389/tcp" # RDP TCP
-      - "3389:3389/udp" # RDP UDP
+      - "8006:8006"    
+      - "3389:3389/tcp" 
+      - "3389:3389/udp" 
     volumes:
       - /tmp/docker-data:/mnt/disco1
       - windows-data:/mnt/windows-data
